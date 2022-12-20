@@ -12,7 +12,6 @@ const newgame=()=>{
     hidden_number=Math.floor(Math.random()*100);
     tries.innerHTML = trys ;
     score.innerHTML = Score;
-    console.log(hidden_number)
   }
 newgame();
 newGame.addEventListener('click', newgame)
