@@ -15,7 +15,7 @@ const newgame=()=>{
   }
 newgame();
 newGame.addEventListener('click', newgame)
-function Check()
+const Check=()=>
 { if(trys!=0)
     {
     if(input.value===hidden_number){
