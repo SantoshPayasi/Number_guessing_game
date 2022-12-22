@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body class="flex">
+    <header>
+      <p class="newgame">New Game</p>
+      <p class="highscore">
+        <span class="reward">🏆</span>
+        highScore :
+      </p>
+      <span id="Highscore"></span>
+      <div class="share">
+        <img src="" alt="" />
+        <span class="shares">share</span>
+      </div>
+    </header>
+    <!-- ======================================================================================= -->
+    <main class="flex">
+      <h1 class="heading">Guess My Number</h1>
+      <div class="gussing-num flex">?</div>
+      <p class="details">Between 1 to 100</p>
+    </main>
+    <!-- =============================================sections========================================== -->
+    <section class="current">
+     <div class="working-section flex">
+        <div class="input flex">
+          <span class="style">>></span>
+          <input
+            type="number"
+            name="number"
+            id="number"
+            place="Insert your number Here"
+          />
+          <span class="style2"><<</span>
+        </div>
+        <!-- ------------------------------------------subsections-------------------------------- -->
+        <div class="check">Check</div>
+        <!-- ------------------------------------------------------------------------------------- -->
+        <div class="max-tries">
+            <p class="tries">Tries : <span class="value"> </span></p>
+            <p class="score">score : <span class="values"> : 10</span></p>
+        </div>
+        <!-- ------------------------------------------------------------------------------- ----- -->
+     </div>
+     <!-- ===============================================secotions========================================= -->
+      <div class="status"> 
+        <h1 class="details msg-heading"><span></span></h1>
+        <div class="massage">
+          <h1 class="heading"></h1>
+          <p class="details status-msg"></p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
