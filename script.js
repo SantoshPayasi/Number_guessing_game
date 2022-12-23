@@ -14,11 +14,11 @@ const newgame=()=>{
     shownumber.innerHTML='?'
     trys=10
     input.disabled=false;
-    input.innerHTML=''
+    input.value=''
     hidden_number=Math.floor(Math.random()*100);
     tries.innerHTML = trys;
     score.innerHTML = Score;
-    console.log(hidden_number)
+    // console.log(hidden_number)
     highScore.innerHTML=Highscore
   }
   const sethigh =( High, Sc)=>{
@@ -40,6 +40,7 @@ const Check=()=>
     if(input.value==hidden_number){
         --trys;
         Score=10-trys
+        input.value=''
         shownumber.innerHTML=hidden_number
         tries.innerHTML = trys;
         score.innerHTML= Score;
@@ -54,6 +55,10 @@ const Check=()=>
        }
        else{
         alert("number is higher then hidden number")
+       }
+       input.value=''
+       if(trys==0){
+        input.disabled=true
        }
     }
     
