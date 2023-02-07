@@ -17,7 +17,7 @@ const newgame=()=>{
     input.value=''
     hidden_number=Math.floor(Math.random()*100);
     tries.innerHTML = trys;
-    score.innerHTML = Score;
+    score.innerHTML = 0;
     // console.log(hidden_number)
     highScore.innerHTML=Highscore
   }
